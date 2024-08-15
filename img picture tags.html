@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>img picture tag </title>
+
+    <style>
+        body
+        {
+            background-color: #414141;
+            color: #FFFFFF;
+        }
+    </style>
+
+</head>
+<body>
+    <h1 style="text-align: center;" >COMPUTER</h1>
+
+    <picture>
+                 <source media="(min-width: 640px)" srcset="pic 1.jpg">  
+                 <!-- in accordance to screen resolution this pic will be showed --> -->
+                <source media="(min-width: 300px)" srcset="pic 2.jpg">
+                <!-- if the 1st pic cant be showed, in accordance to screen resolution this pic will be showed -->
+                <img src="pic 3.jpg">
+                <!-- if the 2st pic cant be showed, in accordance to screen resolution this pic will be showed -->
+
+                <!-- Image is specified for showing on web page on the basis of px set -->
+    </picture>
+
+</body>
+</html>

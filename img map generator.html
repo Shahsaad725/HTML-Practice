@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        image Map
+    </title>
+    <style>
+        body{
+            background-color: #414141;
+        color: #ffffff;
+        }
+    </style>
+</head>
+<body>
+  
+
+
+    <!-- Type on differrent parts of image and get alert -->
+    <img src="pic 1.jpg" usemap="#image-map">
+
+<map name="image-map">
+    <area onclick="pc_left()" target="" alt="PC left" title="PC left" href="" coords="72,255,218,366" shape="rect">
+    <area onclick="pc_middle()" target="" alt="PC middle" title="PC middle" href="" coords="409,360,245,264" shape="rect">
+    <area onclick="pc_right()" target="" alt="PC right" title="PC right" href="" coords="569,367,422,261" shape="rect">
+    <area onclick="building()" target="" alt="Building" title="Building" href="" coords="318,23,112,159,113,251,317,252,527,243,500,104" shape="poly">
+    <area onclick="sky()" target="" alt="sky" title="sky" href="" coords="0,206,5,2,309,6,377,0,640,5,637,148,311,17" shape="poly">
+</map>
+
+ <!-- javascript -->
+<script>
+    function pc_left()
+    {
+        alert("You have clicked on PC left")
+    }
+    function pc_middle()
+    {
+        alert("You have clicked on PC Middle")
+    }
+    function pc_right()
+    {
+        alert("You have clicked on PC right")
+    }
+    function building()
+    {
+        alert("You have clicked on building")
+    }
+    function sky()
+    {
+        alert("You have clicked on the sky")
+    }
+   
+</script>
+
+</body>
+</html>
